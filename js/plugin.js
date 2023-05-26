@@ -175,23 +175,23 @@ buttonsRight.forEach(e => {
 })
 
 // Start About me
-let aboutMe = document.querySelector('.about-me');
-let aboutMeImage = document.querySelector('.about-me img');
-let aboutMeHeading = document.querySelector('.about-me h2');
-let aboutMeDesc = document.querySelector('.about-me .about-desc');
+// let aboutMe = document.querySelector('.about-me');
+// let aboutMeImage = document.querySelector('.about-me img');
+// let aboutMeHeading = document.querySelector('.about-me h2');
+// let aboutMeDesc = document.querySelector('.about-me .about-desc');
 
-function animateAboutme(){
-  if(window.scrollY < aboutMe.scrollHeight - 300){
-    aboutMeImage.style.cssText = "transform: translateY(-100px); opacity: 0;"
-    aboutMeHeading.style.cssText = "transform: translateX(-100px); opacity: 0;"
-    aboutMeDesc.style.cssText = "transform: translateX(-100px); opacity: 0;"
-  }
-  else {
-    aboutMeImage.style.cssText = "transform: translateY(0); opacity: 1;"
-    aboutMeHeading.style.cssText = "transform: translateX(0); opacity: 1;"
-    aboutMeDesc.style.cssText = "transform: translateX(0); opacity: 1;"
-  }
-}
+// function animateAboutme(){
+//   if(window.scrollY < aboutMe.scrollHeight - 300){
+//     aboutMeImage.style.cssText = "transform: translateY(-100px); opacity: 0;"
+//     aboutMeHeading.style.cssText = "transform: translateX(-100px); opacity: 0;"
+//     aboutMeDesc.style.cssText = "transform: translateX(-100px); opacity: 0;"
+//   }
+//   else {
+//     aboutMeImage.style.cssText = "transform: translateY(0); opacity: 1;"
+//     aboutMeHeading.style.cssText = "transform: translateX(0); opacity: 1;"
+//     aboutMeDesc.style.cssText = "transform: translateX(0); opacity: 1;"
+//   }
+// }
 
 // Start skills
 function animateSkills(){
@@ -248,7 +248,7 @@ function animateSkills(){
 // on scroll
 window.onscroll = function(){
   showDarkmode()
-  animateAboutme()
+  // animateAboutme()
   animateSkills()
   // animateTesti()
 
@@ -256,19 +256,6 @@ window.onscroll = function(){
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
