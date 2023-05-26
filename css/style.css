@@ -1050,7 +1050,7 @@ header ul li:hover a {
 }
 
 .services .service-box {
-  background-color: #222;
+  background-color: var(--darkColor02);
   margin-bottom: 50px;
   width: 100%;
   min-height: 250px;
