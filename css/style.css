@@ -10,6 +10,7 @@
   --darkLight: #ddd;
   --darkColor: #051430;
   --darkColor02: #0a1428;
+  --lightColor: #003599;
 
 }
 
@@ -20,6 +21,10 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   background-color: var(--darkColor);
+}
+
+section {
+  overflow: hidden;
 }
 
 body.light-mode {
@@ -286,11 +291,11 @@ header .picture {
     -o-transform: scale(1);
   }
   50% {
-    transform: scale(1.5) translate(150px, 110px);
-    -webkit-transform: scale(1.5) translate(150px, 110px);
-    -moz-transform: scale(1.5) translate(150px, 110px);
-    -ms-transform: scale(1.5) translate(150px, 110px);
-    -o-transform: scale(1.5) translate(150px, 110px);
+    transform: scale(1.5) translate(100px, 110px);
+    -webkit-transform: scale(1.5) translate(100px, 110px);
+    -moz-transform: scale(1.5) translate(100px, 110px);
+    -ms-transform: scale(1.5) translate(100px, 110px);
+    -o-transform: scale(1.5) translate(100px, 110px);
 }
 }
 @keyframes headerBackground_2 {
@@ -318,11 +323,11 @@ header .picture {
     -o-transform: scale(1);
   }
   50% {
-    transform: scale(1.5) translate(-150px, 110px);
-    -webkit-transform: scale(1.5) translate(-150px, 110px);
-    -moz-transform: scale(1.5) translate(-150px, 110px);
-    -ms-transform: scale(1.5) translate(-150px, 110px);
-    -o-transform: scale(1.5) translate(-150px, 110px);
+    transform: scale(1.5) translate(-120px, 50px);
+    -webkit-transform: scale(1.5) translate(-120px, 50px);
+    -moz-transform: scale(1.5) translate(-120px, 50px);
+    -ms-transform: scale(1.5) translate(-120px, 50px);
+    -o-transform: scale(1.5) translate(-120px, 50px);
 }
 }
 
@@ -540,34 +545,11 @@ header ul li:hover a {
     width: 290px;
   }
 }
-.about-me.active .about-box img {
-  opacity: 0;
-  transform: translateY(-100px);
-  -webkit-transform: translateY(-100px);
-  -moz-transform: translateY(-100px);
-  -ms-transform: translateY(-100px);
-  -o-transform: translateY(-100px);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
-}
+
 
 .about-me .about-box h2 {
-  position: relative;
   color: var(--darkLight);
-  opacity: 0;
-  transform: translateX(-100px);
-  -webkit-transform: translateX(-100px);
-  -moz-transform: translateX(-100px);
-  -ms-transform: translateX(-100px);
-  -o-transform: translateX(-100px);
-  transition: 1s;
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+  position: relative;
 }
 
 .about-me .about-box h2::before {
@@ -577,10 +559,15 @@ header ul li:hover a {
 
 .about-me .about-box .about-desc {
   line-height: 2;
-  color: rgb(212, 212, 212);
+  color: #DDD;
   margin-top: 55px;
   font-size: 18px;
   max-width: 536px;
+}
+
+/* .about-me.active .about-box img,
+.about-me .about-box h2,
+.about-me .about-box .about-desc { 
   opacity: 0;
   transform: translateX(-100px);
   -webkit-transform: translateX(-100px);
@@ -592,7 +579,8 @@ header ul li:hover a {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-}
+} */
+
 /* End About me */
 
 /* Start Skills */
@@ -1194,7 +1182,7 @@ footer .fa-instagram {
 .light-mode .h1:not(.testimonials h2),
 .light-mode h4, 
 .light-mode li{
-  color: var(--darkColor) !important;
+  color: var(--lightColor) !important;
 }
 
 .light-mode p {
