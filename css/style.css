@@ -348,9 +348,11 @@ header .text .name {
 }
 
 header .the-down {
+  margin-left: -50px;
   position: absolute;
   bottom: 100px;
-  left: 48%;
+  width: 100px;
+  left: 50%;
 }
 
 header .the-down i {
