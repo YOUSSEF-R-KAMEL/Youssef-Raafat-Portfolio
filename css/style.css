@@ -8,7 +8,9 @@
   --mainColor: #4b71b9;
   --secondColor: #ff3838; 
   --darkLight: #ddd;
-  --darkColor: #0f2412;
+  --darkColor: #051430;
+  --darkColor02: #0a1428;
+
 }
 
 html {
@@ -694,8 +696,8 @@ header ul li:hover a {
 /* Start Certificate */
 .certi {
   padding: 50px 0;
-  background-color: #222;
-  box-shadow: 0 -7px 15px #111;
+  background-color: var(--darkColor02);
+  box-shadow: 0 -7px 15px var(--darkColor);
   overflow: hidden;
   position: relative;
   height: 400px;
@@ -1041,9 +1043,8 @@ header ul li:hover a {
 /* Start Service */
 .services {
   padding: 70px 0;
-  background-color: #222;
+  background-color: var(--darkColor02);
 }
-
 .services h2 {
   margin-bottom: 70px;
   position: relative;
