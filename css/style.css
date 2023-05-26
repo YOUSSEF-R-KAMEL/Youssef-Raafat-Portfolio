@@ -433,14 +433,24 @@ header ul li:hover a {
   }
   header ul {
     text-align: center;
+    top: 30%;
   }
   header ul li {
     margin-right: 35px !important;
     margin-left: 35px !important;
   }
+  header ul .left li:first-child, header ul .right li:last-child {
+    top: 250px !important;
+  }
+  header ul .left li:nth-child(2), header ul .right li:nth-child(2) {
+    top: 350px !important;
+  }
+  header ul .left li:last-child, header ul .right li:first-child {
+    top: 450px !important;
+  }
   header .text {
     width: 100%;
-    top: 40%;
+    top: 25%;
   }
 
   @keyframes headerBackground_2 {
