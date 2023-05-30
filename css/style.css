@@ -822,7 +822,7 @@ header ul li:hover a {
 .slider::before, 
 .slider::after {
   content: '';
-  background: #222;
+  background: var(--darkColor);
   height: 100%;
   position: absolute;
   width: 7px;
